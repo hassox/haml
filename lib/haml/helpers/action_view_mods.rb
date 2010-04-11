@@ -128,12 +128,6 @@ module ActionView
       def content_tag(*args)
         content_tag_with_haml *args
       end
-#      unless defined?(ActionView::Helpers) && defined?(ActionView::Helpers::ActiveRecordInstanceTag)
-#        unless method_defined?(:content_tag_without_haml)
-#          alias_method :content_tag_without_haml, :content_tag
-#          alias_method :content_tag, :content_tag_with_haml
-#        end
-#      end
     end
 
     if Haml::Util.ap_geq_3?
